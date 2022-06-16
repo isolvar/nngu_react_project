@@ -1,0 +1,27 @@
+npx create-react-app "js-pro_project" --template typescript
+npm i -D eslint 
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+npx eslint --init
+
+.prettierrc
+{
+   "printWidth": 100,
+   "tabWidth": 4,
+   "singleQuote": true,
+   "trailingComma": "es5",
+   "bracketSpacing": true,
+   "jsxBracketSameLine": true,
+   "semi": true,
+   "arrowParens": "always",
+   "useTabs": false
+}
+
+npm i react-router-dom
+npm i -D @types/react-router-dom
+
+npm i redux react-redux
+npm i @types/react-redux
+npm i redux-devtools-extension
+
+
+https://www.figma.com/file/ADgwlcuyEKuo1p0bO7wzP5/React-Drafts---ННГУ?node-id=4359%3A3011
