@@ -23,5 +23,7 @@ npm i redux react-redux
 npm i @types/react-redux
 npm i redux-devtools-extension
 
+npm install sass
+
 
 https://www.figma.com/file/ADgwlcuyEKuo1p0bO7wzP5/React-Drafts---ННГУ?node-id=4359%3A3011

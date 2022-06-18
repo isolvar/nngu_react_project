@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+
+  background: #f2f2f2;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_logo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  width: 252px;
+}
+
+//vertical line
+.vl {
+  border-left: 1px solid #424242;
+  opacity: 0.5;
+  height: 100%;
+}
+
+.footer_text {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  color: #424242;
+  opacity: 0.6;
+}
