@@ -11,6 +11,7 @@ const LayoutPage = () => {
       <Header />
       <div className={`${common_style.container} ${style.sidebar_content}`}>
         <SideBar />
+        <div className="content"></div>
       </div>
       <Footer />
     </div>
