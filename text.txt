@@ -22,6 +22,7 @@ npm i -D @types/react-router-dom
 npm i redux react-redux
 npm i @types/react-redux
 npm i redux-devtools-extension
+npm i @reduxjs/toolkit
 
 npm install sass
 

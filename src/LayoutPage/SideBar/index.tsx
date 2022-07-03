@@ -1,31 +1,19 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import LoginBlock from './components/LoginBlock';
+import SideBarExit from './components/SideBarExit';
+import SideBarItem from './components/SideBarItem/SideBarItem';
 import style from './SideBar.module.scss';
-import SvgSelector from './SvgSelector';
 
 const SideBar = () => {
   const location = useLocation();
-
-  let svgColor, pColor;
-  if (location.pathname === '/adverts') {
-    svgColor = style.svg_blue;
-    pColor = style.p_blue;
-  } else {
-    svgColor = style.svg_grey;
-    pColor = style.p_grey;
-  }
+  const path = location.pathname.split('/')[1]; // login
 
   return (
     <div className={style.sidebar}>
-      <div className={style.login_block}></div>
-      <Link to={'/adverts'} className={`${style.advert_link} ${style.adverts}`}>
-        <SvgSelector id="adverts" className={`${style.svg_selector} ${svgColor}`} />
-        <p className={pColor}>Объявления</p>
-      </Link>
-      <Link to={'/'} className={style.exit}>
-        <SvgSelector id="exit" className={style.svg_selector} />
-        <p>Выход</p>
-      </Link>
+      <LoginBlock />
+      {path === 'login' ? <SideBarItem /> : <></>}
+      {path === 'login' ? <SideBarExit /> : <></>}
     </div>
   );
 };

@@ -1,0 +1,33 @@
+.button_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 129px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 20px;
+
+  color: #fff;
+  background-color: #4877f2;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.text {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+}
+
+.plus {
+  font-weight: 700;
+  font-size: 30px;
+}

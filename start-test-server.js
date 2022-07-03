@@ -1,30 +1,14 @@
 const http = require('http');
-const fs = require('fs').promises;
+const fsp = require('fs').promises;
+const fs = require('fs');
 
 const host = 'localhost';
 const port = 5555;
 
-// const requestListener = function (req, res) {
-//   fs.readFile(__dirname + '/test-server-data.json')
-//     .then((contents) => {
-//       res.setHeader('Content-Type', 'application/json');
-//       res.writeHead(200);
-//       res.end(contents);
-//     })
-//     .catch((err) => {
-//       res.writeHead(500);
-//       res.end(err);
-//       return;
-//     });
-
-//   // res.setHeader('Content-Type', 'application/json');
-//   // res.writeHead(200);
-//   // res.end('My first server!');
-// };
-
 let goods = null;
 
-fs.readFile(__dirname + '/test-server-data.json')
+fsp
+  .readFile(__dirname + '/server-data/test-server-data.json')
   .then((content) => {
     goods = content;
   })
@@ -34,11 +18,18 @@ fs.readFile(__dirname + '/test-server-data.json')
   });
 
 const requestListener = function (req, res) {
-  res.setHeader('Content-Type', 'application/json');
   switch (req.url) {
     case '/goods':
+      res.setHeader('Content-Type', 'application/json');
       res.writeHead(200);
       res.end(goods);
+      break;
+    case '/user-icon':
+      res.setHeader('Content-Type', 'image/png');
+      res.writeHead(200);
+      fs.readFile('./server-data/login_icon.png', (err, image) => {
+        res.end(image);
+      });
       break;
 
     default:

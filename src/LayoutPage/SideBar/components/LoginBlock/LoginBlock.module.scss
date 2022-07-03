@@ -1,0 +1,51 @@
+.login_block {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+
+  border-bottom: 1px solid rgba(42, 47, 55, 0.1);
+
+  & img {
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile_name {
+  margin: 0;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #2a2f37;
+}
+
+.profile_text {
+  margin: 3px 0;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  color: #2a2f37;
+
+  opacity: 0.6;
+}
