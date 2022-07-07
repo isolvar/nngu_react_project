@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  & P {
+    margin-right: 20px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* #1D1D1D */
+    color: #2c2d2e;
+  }
+}
+
+.arrow_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 32px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

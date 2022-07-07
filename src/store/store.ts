@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import advertsReducer from './createSlice.ts';
+import advertsReducer from './advertsSlice.ts';
 
 export default configureStore({
   reducer: {
